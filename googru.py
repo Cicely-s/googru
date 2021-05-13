@@ -8,7 +8,7 @@ layout = [[sg.InputText(key='-IN-'),
         sg.Button('Search', key='-SEARCH-', bind_return_key=True),
         sg.Button('Clear', key='-CLEAR-')],]
 
-window = sg.Window('ググるやつ。', layout, grab_anywhere=True, keep_on_top=True)
+window = sg.Window('ググるやつ。', icon='images/logo.ico', grab_anywhere=True, keep_on_top=True).Layout(layout)
 
 while True:
     event, values = window.read()
