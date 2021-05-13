@@ -17,7 +17,7 @@ while True:
         break
     if event == '-SEARCH-':
         webbrowser.open('https://www.google.co.jp/search?q=' +
-                        values['-IN-'] +'&ie=utf-8&oe-utf-8&hl=ja')
+                        values['-IN-'] +'&ie=utf-8&oe=utf-8&hl=ja')
     elif event == '-CLEAR-':
         window['-IN-'].update('')
 
